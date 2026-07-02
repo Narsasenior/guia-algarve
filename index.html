@@ -152,6 +152,7 @@ h1, h2, h3 { font-family: "Fraunces", Georgia, serif; margin: 0; }
 .selo-bb { background: #e4f3e2; color: #2e6b27; border: 1px solid #b9e0b2; }
 .selo-pq { background: #e2eefb; color: #1c5aa0; border: 1px solid #b6d4f2; }
 .selo-gr { background: #f0e9f7; color: #6a3f9c; border: 1px solid #d8c6ec; }
+.selo-ep { background: #fbf0d6; color: #8a6100; border: 1px solid #ecd08f; }
 .modal-hero .selo { border: none; }
 
 .meta-row { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-top: 2px; font-size: 14px; }
@@ -339,7 +340,7 @@ h1, h2, h3 { font-family: "Fraunces", Georgia, serif; margin: 0; }
   </main>
 
   <footer class="site-footer wrap">
-    <p>Guia Gastronómico do Algarve · 39 casas · Dados reais verificados em junho de 2026 (Guia Michelin, sites oficiais, Google Maps, TripAdvisor) · Confirme sempre junto de cada estabelecimento antes de reservar.</p>
+    <p>Guia Gastronómico do Algarve · 42 casas · Dados reais verificados em junho de 2026 (Guia Michelin, sites oficiais, Google Maps, TripAdvisor) · Confirme sempre junto de cada estabelecimento antes de reservar.</p>
   </footer>
 
   <!-- Modal ficha -->
@@ -1263,6 +1264,7 @@ const RESTAURANTES = [
     rating: 4.3,
     avaliacoes: 6185,
     selo: "popular-qualidade",
+    escolhaPessoal: true,
     pratos: ["Frango piri-piri grelhado em carvão (especialidade)", "Frango sem picante para crianças", "Batata frita e salada"],
     destaques: ["Aberto desde 1964 — reclama ser a origem do frango piri-piri da Guia", "Método de brasa mantido há mais de 60 anos", "Casa histórica e icónica"],
     bomPara: ["O frango piri-piri 'original'", "Famílias", "Turistas curiosos"],
@@ -1475,6 +1477,90 @@ const RESTAURANTES = [
     estado: "aberto",
     descricao: "Referência da cozinha algarvia e portuguesa na Cidade Velha de Faro, ativa desde cerca de 2009. Boa reputação e muito procurada, com pratos regionais e de peixe/marisco.",
     fontes: ["https://restaurantguru.com/Faz-Gostos-Faro", "https://www.tripadvisor.com/Restaurant_Review-g189116-d2281835-Reviews-Faz_Gostos-Faro_Faro_District_Algarve.html"]
+  },
+  {
+    id: "taberna-do-manel-portimao",
+    nome: "Taberna D'Manuel",
+    tipo: ["taberna", "petiscos"],
+    localidade: "Portimão (zona ribeirinha)",
+    morada: "Largo do Dique 16 (atrás do Museu Manuel Teixeira Gomes), 8500-531 Portimão",
+    zona: "Barlavento",
+    cozinha: "Petiscos / tapas e cozinha tradicional portuguesa",
+    michelin: 0,
+    precoNivel: 2,
+    precoNota: "€€ — acessível (TripAdvisor: económico)",
+    rating: 4.0,
+    avaliacoes: 1,
+    avaliacaoPessoal: true,
+    pratos: ["Puntillitas (lulinhas fritas)", "Ovos rotos", "Moelas guisadas", "Bochechas de porco no seu molho", "Gambas ao alhinho com pimentos verdes", "Camembert com mel e nozes", "Bife na pedra"],
+    destaques: ["Escolha pessoal do editor ★★★★", "Na antiga casa do ex-presidente Manuel Teixeira Gomes, junto ao rio", "TripAdvisor 4,2 (~514 avaliações)"],
+    bomPara: ["Petiscar à beira-rio", "Refeição descontraída", "Tapas com vinho"],
+    ambiente: "Taberna típica na zona ribeirinha de Portimão, junto ao Largo do Dique",
+    telefone: "+351 282 459 129",
+    reserva: "Recomendável em época alta.",
+    horario: "Seg–sáb 11:00-23:00; dom 15:00-23:00 (confirmar).",
+    website: "https://www.instagram.com/tabernadmanuel/",
+    lat: 37.1372, lng: -8.5345, coordAprox: true,
+    desde: null,
+    estado: "aberto",
+    descricao: "Taberna de petiscos na zona ribeirinha de Portimão (também conhecida como 'Taberna do Manel'), instalada na antiga casa do ex-presidente Manuel Teixeira Gomes. Adicionada como recomendação pessoal (★★★★); cozinha tradicional e tapas a bom preço.",
+    fontes: ["https://www.tripadvisor.com/Restaurant_Review-g189120-d10353258-Reviews-TABERNA_D_MANUEL-Portimao_Faro_District_Algarve.html", "https://www.instagram.com/tabernadmanuel/"]
+  },
+  {
+    id: "pinocchio-praia-da-rocha",
+    nome: "Ristorante Pinocchio",
+    tipo: ["restaurante"],
+    localidade: "Praia da Rocha, Portimão",
+    morada: "Av. Tomás Cabreira 24, Edifício Rocha Praia Mar, 8500-802 Praia da Rocha, Portimão",
+    zona: "Barlavento",
+    cozinha: "Italiana (massas, pizza, sobremesas)",
+    michelin: 0,
+    precoNivel: 2,
+    precoNota: "€€ — ~15-25€/pessoa; boa relação qualidade/preço",
+    rating: 4.6,
+    avaliacoes: 1600,
+    escolhaPessoal: true,
+    pratos: ["Esparguete de marisco", "Spaghetti carbonara", "Penne à bolonhesa", "Pão de alho", "Tiramisù", "Panna cotta", "Soufflé de chocolate"],
+    destaques: ["Escolha pessoal do editor", "#1 dos restaurantes italianos de Portimão (TripAdvisor)", "Proprietários italianos; ambiente familiar e atencioso"],
+    bomPara: ["Jantar em casal ou família", "Cozinha italiana", "Boa relação qualidade/preço"],
+    ambiente: "Trattoria italiana acolhedora na Praia da Rocha, gerida por proprietários italianos",
+    telefone: "+351 932 732 914",
+    reserva: "Recomendada, sobretudo ao jantar (casa muito procurada).",
+    horario: "Dom 12:00-15:00 e 18:00-22:30; seg e qua–sáb jantar 18:00-22:30 (sex/sáb também almoço); encerra terça.",
+    website: "https://www.facebook.com/pinocchioportimao/",
+    lat: 37.1182549, lng: -8.5449884, coordAprox: false,
+    desde: null,
+    estado: "aberto",
+    descricao: "Trattoria italiana muito bem cotada na Praia da Rocha (n.º 1 dos italianos de Portimão no TripAdvisor), gerida por proprietários italianos. Massas frescas e clássicos italianos a preço acessível. Adicionada como eleição/recomendação pessoal.",
+    fontes: ["https://restaurantguru.com/Ristorante-Pinocchio-Portimao", "https://www.tripadvisor.com/Restaurant_Review-g652081-d16650222-Reviews-Ristorante_Pinocchio-Praia_da_Rocha_Portimao_Faro_District_Algarve.html"]
+  },
+  {
+    id: "tostas-club-portimao",
+    nome: "Tostas Club",
+    tipo: ["petiscos", "restaurante"],
+    localidade: "Portimão (centro)",
+    morada: "Edifício Gémeos, Rua dos Lusíadas loja B, 8500-652 Portimão",
+    zona: "Barlavento",
+    cozinha: "Tostas, sandes e comida rápida portuguesa",
+    michelin: 0,
+    precoNivel: 1,
+    precoNota: "€ — ~10-15€/pessoa; económico",
+    rating: 4.5,
+    avaliacoes: 832,
+    escolhaPessoal: true,
+    pratos: ["Tostas 'à portuguesa' (enormes)", "Tostas vegetarianas", "Batata-doce frita", "Club sandwich de frango", "Baguetes"],
+    destaques: ["Escolha pessoal do editor", "Casa de tostas de referência em Portimão (desde 2006)", "Porções generosas a bom preço"],
+    bomPara: ["Almoço rápido", "Lanche", "Refeição económica"],
+    ambiente: "Snack-bar/casa de tostas informal no centro de Portimão",
+    telefone: "+351 936 375 086",
+    reserva: "Não costuma exigir reserva.",
+    horario: "Seg–sáb 12:00-22:00; encerra domingo.",
+    website: "https://www.facebook.com/snackbaroze/",
+    lat: 37.1323275, lng: -8.5420479, coordAprox: false,
+    desde: 2006,
+    estado: "aberto",
+    descricao: "Casa de tostas de referência no centro de Portimão (Edifício Gémeos, desde 2006), famosa pelas tostas enormes e pela batata-doce frita, a preços económicos. Adicionada como sugestão pessoal.",
+    fontes: ["https://restaurantguru.com/Tostas-CLUB-Portimao", "https://www.facebook.com/snackbaroze/"]
   }
 ];
 
@@ -1600,7 +1686,10 @@ if (typeof window !== "undefined") {
     }
     return true;
   }
+  function isPessoal(r) { return !!(r.escolhaPessoal || r.avaliacaoPessoal); }
   function sortFn(a, b) {
+    const pin = (isPessoal(b) ? 1 : 0) - (isPessoal(a) ? 1 : 0); // sugestões pessoais no topo
+    if (pin) return pin;
     switch (state.sort) {
       case "rating": return b.rating - a.rating || score(b) - score(a);
       case "michelin": return b.michelin - a.michelin || b.rating - a.rating;
@@ -1629,7 +1718,8 @@ if (typeof window !== "undefined") {
     const isFav = state.favs.has(r.id);
     const tags = r.tipo.map(t => `<span class="tag ${t}">${TIPO_LABEL[t]}</span>`).join("");
     const mich = r.michelin ? `<span class="tag michelin">★ ${r.michelin} Michelin</span>` : "";
-    const selos = selosOf(r).map(s => `<span class="selo ${SELO_DEF[s].cls}">${SELO_DEF[s].icon} ${SELO_DEF[s].label}</span>`).join("")
+    const selos = ((r.escolhaPessoal || r.avaliacaoPessoal) ? `<span class="selo selo-ep" title="Recomendação pessoal">⭐ Escolha pessoal</span>` : "")
+      + selosOf(r).map(s => `<span class="selo ${SELO_DEF[s].cls}">${SELO_DEF[s].icon} ${SELO_DEF[s].label}</span>`).join("")
       + (r.grupos ? `<span class="selo selo-gr" title="Adequado para grupos &gt;10">👥 Grupos</span>` : "");
     const topDishes = (r.pratos || []).slice(0, 2).join(", ");
     return `
@@ -1648,7 +1738,7 @@ if (typeof window !== "undefined") {
         ${selos ? `<div class="selos">${selos}</div>` : ""}
         <div class="meta-row">
           ${starsStr(r.rating)} <span class="rating-num">${r.rating.toFixed(1)}</span>
-          <span style="color:var(--muted);font-size:12.5px">(${r.avaliacoes.toLocaleString("pt")})</span>
+          <span style="color:var(--muted);font-size:12.5px">${r.avaliacaoPessoal ? "avaliação pessoal" : "(" + r.avaliacoes.toLocaleString("pt") + ")"}</span>
           ${precoStr(r.precoNivel)}
         </div>
         <div class="dishes"><b>Pratos:</b> ${topDishes}</div>
@@ -1674,13 +1764,13 @@ if (typeof window !== "undefined") {
         <h2 id="modal-title">${r.nome}</h2>
         <div class="loc">📍 ${r.localidade} · ${r.zona}${r.desde ? " · desde " + r.desde : ""}</div>
         <div class="tags">${mich}${tags}</div>
-        ${selosOf(r).length ? `<div class="selos">${selosOf(r).map(s => `<span class="selo ${SELO_DEF[s].cls}">${SELO_DEF[s].icon} ${SELO_DEF[s].label}</span>`).join("")}</div>` : ""}
+        ${(selosOf(r).length || r.escolhaPessoal || r.avaliacaoPessoal) ? `<div class="selos">${(r.escolhaPessoal || r.avaliacaoPessoal) ? `<span class="selo selo-ep">⭐ Escolha pessoal</span>` : ""}${selosOf(r).map(s => `<span class="selo ${SELO_DEF[s].cls}">${SELO_DEF[s].icon} ${SELO_DEF[s].label}</span>`).join("")}</div>` : ""}
       </div>
       <div class="modal-body">
         <p class="desc">${r.descricao}</p>
 
         <div class="info-grid">
-          <div class="info-item"><div class="k">Avaliação</div><div class="v">${starsStr(r.rating)} ${r.rating.toFixed(1)} <span style="color:var(--muted)">· ${r.avaliacoes.toLocaleString("pt")} opiniões</span></div></div>
+          <div class="info-item"><div class="k">Avaliação</div><div class="v">${starsStr(r.rating)} ${r.rating.toFixed(1)} <span style="color:var(--muted)">· ${r.avaliacaoPessoal ? "avaliação pessoal do editor" : r.avaliacoes.toLocaleString("pt") + " opiniões"}</span></div></div>
           <div class="info-item"><div class="k">Custo</div><div class="v">${precoStr(r.precoNivel)} — ${r.precoNota}</div></div>
           <div class="info-item"><div class="k">Cozinha</div><div class="v">${r.cozinha}</div></div>
           <div class="info-item"><div class="k">Ambiente</div><div class="v">${r.ambiente}</div></div>
